@@ -6,7 +6,7 @@ resource "aws_s3_bucket" "mybucket" {
     Environment = "Test"
   }
    versioning {
-    enabled = false
+    enabled = true
   }
 }
 
@@ -19,7 +19,7 @@ resource "aws_s3_bucket" "bucket2" {
   }
 
    versioning {
-    enabled = false
+    enabled = true
   
   }
 }
